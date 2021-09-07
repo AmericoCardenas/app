@@ -18,13 +18,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Contraseña"
-        android:textColorHint="@color/black"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
-        android:textAlignment="gravity"
         android:minHeight="48dp"
         android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_usuario" />
@@ -35,11 +35,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="248dp"
         android:hint="Usuario"
-        android:textColorHint="@color/black"
-        android:textAlignment="gravity"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +48,7 @@
         android:id="@+id/btn_login"
         android:layout_width="240dp"
         android:layout_height="71dp"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="376dp"
         android:background="@color/purple_500"
         android:text="Login"
         android:textColor="@color/white"
@@ -84,17 +84,19 @@
         app:srcCompat="@drawable/admin"
         tools:srcCompat="@drawable/admin" />
 
-    <ImageView
-        android:id="@+id/img_load"
+    <TextView
+        android:id="@+id/txt_registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="272dp"
-        android:layout_marginBottom="315dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="476dp"
+        android:text="Registrarse"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

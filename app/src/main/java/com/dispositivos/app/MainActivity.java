@@ -1,6 +1,7 @@
 package com.dispositivos.app;
 
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.Menu;
 
 import com.google.android.material.navigation.NavigationView;
@@ -14,6 +15,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.dispositivos.app.databinding.ActivityMainBinding;
+
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,4 +63,6 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
 }
